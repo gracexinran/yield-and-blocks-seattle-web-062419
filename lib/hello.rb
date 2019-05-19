@@ -1,8 +1,10 @@
 def hello_t(array)
   i = 0
-
+  if array = nil
+    puts "Hey! No block was given!"
+  end
   while i < array.length
-    yield(array[i])
+    yield array[i]
     i = i + 1
   end
   array
