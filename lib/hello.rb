@@ -3,9 +3,9 @@ def hello_t(array)
   end
   while i < array.length
     yield array[i]
-    if array = nil
-      puts "Hey! No block was given!"
-    end
+    # if array = nil
+    #   puts "Hey! No block was given!"
+    # end
     i = i + 1
   end
   array
