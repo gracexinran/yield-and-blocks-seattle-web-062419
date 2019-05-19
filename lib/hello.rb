@@ -3,7 +3,7 @@ def hello_t(array)
   end
   while i < array.length
     yield array[i]
-    if !array
+    if array = nil
       puts "Hey! No block was given!"
     end
     i = i + 1
